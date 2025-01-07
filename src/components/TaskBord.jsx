@@ -83,7 +83,7 @@ const TaskBord = () => {
               setIsOpen={setIsOpen}
             />
             {tasks.length === 0 ? (
-              <h1>No task found</h1>
+              <h1 className="text-center text-3xl">No task found . Please Add One.</h1>
             ) : (
               <TaskList
                 onFav={handleFavBtn}
