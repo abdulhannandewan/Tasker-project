@@ -4,7 +4,7 @@ import TaskAction from "./Tasks/TaskAction";
 import TaskList from "./Tasks/TaskList";
 import AddTaskModal from "./Tasks/AddTaskModal";
 
-const TaskBord = () => {
+const TaskBoard = () => {
   const defaultTask = {
     id: crypto.randomUUID(),
     title: "learn react",
@@ -83,7 +83,9 @@ const TaskBord = () => {
               setIsOpen={setIsOpen}
             />
             {tasks.length === 0 ? (
-              <h1 className="text-center text-3xl">No task found . Please Add One.</h1>
+              <h1 className="text-center text-3xl">
+                No task found . Please Add One.
+              </h1>
             ) : (
               <TaskList
                 onFav={handleFavBtn}
@@ -99,4 +101,4 @@ const TaskBord = () => {
   );
 };
 
-export default TaskBord;
+export default TaskBoard;

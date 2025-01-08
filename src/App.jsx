@@ -1,7 +1,8 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import TaskBord from "./components/Taskbord";
+import TaskBoard from "./components/TaskBoard";
+
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
       <Header />
       <div className="flex flex-col justify-center items-center">
         <Hero />
-        <TaskBord />
+        <TaskBoard />
       </div>
 
       <Footer />
